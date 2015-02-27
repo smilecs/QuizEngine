@@ -1,0 +1,24 @@
+  <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">MENU</li>
+              <li><a href="/#/profile">Profile</a></li>
+              <li><a href="">View Grades</a></li>
+              <li><a href="">Log out</a></li>
+                      </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+            <div class="span9">
+          <div class="hero-unit">
+
+            <h1>Select Courses to Apply For</h1>
+          </div>
+          <div class="row-fluid">
+            <div class="span4" ng-repeat="data in subjects">
+              <h2>{{data.title}}</h2>
+              <p>{{data.desc}}</p>
+              <p><button class="btn btn-large btn-primary" ng-click="apply(data._id)">Apply</button> </p>
+              
+            </div><!--/span-->
+          </div><!--/row-->

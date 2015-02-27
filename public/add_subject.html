@@ -1,0 +1,39 @@
+  <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">MENU</li>
+              <li><a href="/#/staff">Courses</a></li>
+              <li><a href="">Log out</a></li>
+                      </ul>
+          </div><!--/.well -->
+        </div>
+        <div class="span9">
+          <div class="hero-unit">
+  <form>
+  <div class="control-group">
+    <label class="control-label" for="title">Course Title</label>
+    <div class="controls">
+      <input type="text" id="title" ng-model="subject.title" placeholder="TITLE">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="code">Course Code</label>
+    <div class="controls">
+      <input type="Number" class="input-small" id="code" ng-model="subject.course_code" placeholder="CODE">
+    </div>
+  </div>
+      <div class="control">
+      <label class="control-label" for="area">
+        Description:</label><textarea id="area" rows="3" ng-model="subject.desc"></textarea>
+</div>
+<div class="control-group">
+<div class="controls">
+   <button class="btn" type="submit" ng-click="adding(subject)">add</button>
+    </div>
+  </div>
+  </div>
+  </form>
+</div>
+</div>
+{{subject}}

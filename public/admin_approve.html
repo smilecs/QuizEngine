@@ -1,0 +1,11 @@
+            <div class="span9">
+            <h1>Users</h1>
+          <div class="row-fluid">
+            <div class="span4" ng-repeat="data in applicants">
+              <h2>{{data.name}}</h2>
+              <p>{{data.email}} <button type="button" class="btn btn-large btn-primary" data="{{data._id}}" ng-click="approve(data._id)">make staff</button></p>
+
+              
+            </div><!--/span-->
+          </div><!--/row-->
+       

@@ -1,0 +1,25 @@
+ <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header">MENU</li>
+              <li><a href="/#/profile/apply">Apply</a></li>
+              <li><a href="/#/profile">Profile</a></li>
+              <li><a href="">Log out</a></li>
+                      </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+    
+    <div class="span9">
+          <div class="hero-unit">
+
+            <h1>Courses grade</h1>
+          </div>
+          <div class="row-fluid">
+            <div class="span4" ng-repeat="data in grade">
+              <h2>{{data.courseReport[0].name}}:
+             {{data.courseReport[0].grade}}</h2>
+            
+               </div><!--/span-->
+          </div><!--/row-->
+ 

@@ -1,0 +1,11 @@
+
+<table width="50%">
+     <tr>
+  <td>{{counter + 1}}.</td><td><label><h4>{{quiz.title}}</h4></label></td></tr>
+  <tr><td><h5><input type="radio" name="optionsRadios"  value="a" ng-model="ans.select">{{quiz.select[0].a}}</h5></td></tr>
+  <tr><td><h5><input type="radio" name="optionsRadios"  value="b" ng-model="ans.select">{{quiz.select[0].b}}</h5></td></tr>
+  <tr><td><h5><input type="radio" name="optionsRadios"  value="c" ng-model="ans.select">{{quiz.select[0].c}}</h5></td></tr>
+  <tr><td><h5><input type="radio" name="optionsRadios"  value="d" ng-model="ans.select">{{quiz.select[0].d}}</h5></td></tr>
+  <tr><td><button class="btn btn-large btn-primary" ng-click="next_q(ans.select)">proceed</button> </td>
+	  </tr>
+  </table>
