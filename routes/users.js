@@ -5,7 +5,6 @@ var mongoose = require('mongoose');
 var subject = schema.subjectModel;
 var question = schema.question;
 var user = schema.userModel;
-var fs = require('fs');
 var option = schema.optionModel;
 /* GET users listing. */
 router.get('/applicants', function(req, res) {
